@@ -1,11 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap");
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 30px;
+}
+
+.nav h1 {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+  color: #007bff;
+}
+
+.intro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  right: 15%;
+}
+
+.intro-container .intro {
+  border: #ff5470 5px solid;
+  border-radius: 2px;
+  padding: 25px;
+  text-align: center;
+}
+
+.intro-container .intro p {
+  font-weight: lighter;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 body {
   background-color: aliceblue;
+  height: 100vh;
 }
 /*# sourceMappingURL=App.css.map */

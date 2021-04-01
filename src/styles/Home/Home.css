@@ -1,0 +1,26 @@
+.intro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  right: 15%;
+}
+
+.intro-container .intro {
+  border: #ff5470 5px solid;
+  border-radius: 2px;
+  padding: 25px;
+  text-align: center;
+}
+
+.intro-container .intro p {
+  font-weight: lighter;
+}
+/*# sourceMappingURL=Home.css.map */

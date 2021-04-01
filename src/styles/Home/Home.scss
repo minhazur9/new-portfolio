@@ -1,0 +1,17 @@
+.intro-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  right: 15%;
+  .intro {
+    border: #ff5470 5px solid;
+    border-radius: 2px;
+    padding: 25px;
+    text-align: center;
+    p {
+      font-weight: lighter;
+    }
+  }
+}
