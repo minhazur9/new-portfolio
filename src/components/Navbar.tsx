@@ -4,10 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
     return (
-        <Nav
-            activeKey="/home"
-            onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-        >
+        <Nav>
             <h1>Minhazur Rahaman</h1>
             <Nav.Item>
                 <Nav.Link href="/home">HOME</Nav.Link>

@@ -6,5 +6,13 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-typescript', 'gatsby-plugin-sass'],
+  plugins: ['gatsby-plugin-typescript', 'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+  ],
 };
