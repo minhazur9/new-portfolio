@@ -7,7 +7,7 @@ const Navbar = () => {
         <Nav>
             <h1>Minhazur Rahaman</h1>
             <Nav.Item>
-                <Nav.Link href="/home">HOME</Nav.Link>
+                <Nav.Link href="/">HOME</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link href="/projects">PROJECTS</Nav.Link>

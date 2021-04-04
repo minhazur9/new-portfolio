@@ -1,0 +1,35 @@
+.projects-container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ff5470;
+}
+
+.projects-container-header .search-box {
+  margin-top: 15px;
+  margin-left: 60px;
+  height: 35px;
+}
+
+.projects-container-header .search-box .search-icon {
+  margin-right: 10px;
+}
+
+.projects-container-header .search-box #search-projects {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  -webkit-transition: border-color 600ms;
+  transition: border-color 600ms;
+}
+
+.projects-container-header .search-box #search-projects:focus {
+  border-color: #ff5470;
+  -webkit-transition: border-color 600ms;
+  transition: border-color 600ms;
+}
+/*# sourceMappingURL=Projects.css.map */

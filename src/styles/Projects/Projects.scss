@@ -1,0 +1,24 @@
+.projects-container-header {
+  display: flex;
+  justify-content: center;
+  color: #ff5470;
+  .search-box {
+    margin-top: 15px;
+    margin-left: 60px;
+    height: 35px;
+    .search-icon {
+        margin-right: 10px;
+    }
+    #search-projects {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      outline: none;
+      transition: border-color 600ms;
+      &:focus {
+        border-color: #ff5470;
+        transition: border-color 600ms;
+      }
+    }
+  }
+}
