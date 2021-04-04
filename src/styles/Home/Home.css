@@ -12,6 +12,15 @@
   height: 400px;
 }
 
+.intro-container:after {
+  content: '';
+  height: 2px;
+  width: 80%;
+  background: #ff5470;
+  position: absolute;
+  top: 390px;
+}
+
 .intro-container .intro {
   border: #ff5470 5px solid;
   border-radius: 2px;
@@ -28,15 +37,6 @@
 .intro-container .intro p {
   font-size: 20px;
   font-weight: lighter;
-}
-
-.intro-container::after {
-  content: '';
-  height: 2px;
-  width: 80%;
-  background: #ff5470;
-  position: absolute;
-  top: 390px;
 }
 
 .skills {
