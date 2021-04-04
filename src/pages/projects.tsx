@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 const Projects = ({ data }: any) => {
-    const allProjects: any = data.allMarkdownRemark.nodes;
-    const renderProjects: any = () => {
-        return allProjects.map((project: any) => {
+    const [searchTerm, setSearchTerm] = useState("")
+    const [allProjects, setAllProjects] = useState([])
+
+    
+    const searchProjects = (searchTerm: string) => {
+        const foundProjects: any = [];
+        const regexp = new RegExp(searchTerm, 'i')
+        allProjects.forEach(project => {
+            if (project.frontmatter.slug.match(regexp)) foundProjects.push(project)
+        })
+        return foundProjects;
+    }
+
+    useEffect(() => {
+        setAllProjects(data.allMarkdownRemark.nodes);
+    }, [searchTerm])
+
+
+    const renderProjects: any = (searchTerm: string) => {
+        console.log(searchTerm)
+        const foundProjects: object[] = searchProjects(searchTerm)
+        return foundProjects.map((project: any) => {
             const { title, thumb } = project.frontmatter
             const { gatsbyImageData } = thumb.childImageSharp
             return (
@@ -27,11 +46,11 @@ const Projects = ({ data }: any) => {
                 <h1>Projects</h1>
                 <div className="search-box">
                     <FontAwesomeIcon icon={faSearch} size='1x' className="search-icon" />
-                    <input type="text" name="search-projects" id="search-projects" />
+                    <input type="text" name="search-projects" id="search-projects" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                 </div>
             </div>
             <div className="projects-list">
-                {renderProjects()}
+                {renderProjects(searchTerm)}
             </div>
         </Layout>
     )
@@ -43,6 +62,7 @@ query allProjectsQuery {
       nodes {
         frontmatter {
           title
+          slug
           thumb {
             childImageSharp {
               gatsbyImageData

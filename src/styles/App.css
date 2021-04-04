@@ -47,6 +47,9 @@
 
 .projects-list .project {
   max-width: 25%;
+  margin: 20px;
+  border: 1px solid black;
+  padding: 10px 30px;
 }
 
 .projects-list .project .project-thumb {
