@@ -45,6 +45,16 @@
   margin-top: 20px;
 }
 
+.projects-list .project {
+  max-width: 25%;
+}
+
+.projects-list .project .project-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;

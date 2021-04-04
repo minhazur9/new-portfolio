@@ -43,4 +43,14 @@
       flex-wrap: wrap;
   margin-top: 20px;
 }
+
+.projects-list .project {
+  max-width: 25%;
+}
+
+.projects-list .project .project-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=Projects.css.map */

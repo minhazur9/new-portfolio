@@ -7,7 +7,7 @@
     margin-left: 60px;
     height: 35px;
     .search-icon {
-        margin-right: 10px;
+      margin-right: 10px;
     }
     #search-projects {
       border-top: none;
@@ -24,8 +24,14 @@
 }
 
 .projects-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  .project {
+    max-width: 25%;
+    .project-thumb {
+      display: flex;
+    }
+  }
 }
