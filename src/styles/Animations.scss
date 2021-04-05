@@ -1,0 +1,12 @@
+@keyframes slideFromLeft {
+    100% {  
+        right: 10%;
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 100%;
+    }
+}

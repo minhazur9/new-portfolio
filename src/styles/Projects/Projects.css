@@ -50,10 +50,12 @@
   padding: 10px 30px;
   -webkit-box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fbfcfd;
 }
 
 .projects-list .project h3 {
   border-bottom: 1px #383838 solid;
+  cursor: default;
 }
 
 .projects-list .project .project-thumb {

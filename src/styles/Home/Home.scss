@@ -1,3 +1,4 @@
+@import '../Animations.scss';
 .intro-container {
   display: flex;
   position: relative;
@@ -16,9 +17,14 @@
     border: #ff5470 5px solid;
     border-radius: 2px;
     padding: 45px;
-    right: 10%;
+    right: 20%;
+    opacity: 0;
     text-align: center;
     position: relative;
+    animation-name: slideFromLeft;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
     h1 {
       font-size: 50px;
     }
@@ -30,8 +36,14 @@
   .contact {
     display: flex;
     justify-content: space-around;
+    animation-fill-mode: forwards;
     flex-wrap: wrap;
     width: 15%;
+    opacity: 0%;
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-delay: 500ms;
     .github-icon {
       margin: 15px;
       color: black;

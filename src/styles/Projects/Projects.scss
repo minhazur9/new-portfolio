@@ -34,8 +34,10 @@
     border: 1px solid rgb(75, 75, 75);
     padding: 10px 30px;
     box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(251, 252, 253);
     h3 {
       border-bottom: 1px rgb(56, 56, 56) solid;
+      cursor: default;
     }
     .project-thumb {
       display: flex;

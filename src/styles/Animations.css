@@ -1,0 +1,26 @@
+@-webkit-keyframes slideFromLeft {
+  100% {
+    right: 10%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideFromLeft {
+  100% {
+    right: 10%;
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 100%;
+  }
+}
+/*# sourceMappingURL=Animations.css.map */
