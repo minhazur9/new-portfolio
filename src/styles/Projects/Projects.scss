@@ -1,3 +1,5 @@
+@import '../Animations.scss';
+
 .projects-container-header {
   display: flex;
   justify-content: center;
@@ -8,7 +10,7 @@
     height: 35px;
     .search-icon {
       margin-right: 10px;
-      color: black
+      color: black;
     }
     #search-projects {
       border-top: none;
@@ -35,6 +37,24 @@
     padding: 10px 30px;
     box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
     background-color: rgb(251, 252, 253);
+    transition: transform 400ms, max-height 1.5s;
+    max-height: 215.1px;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.1);
+      max-height: 1000px;
+    }
+    .project-info {
+      margin-top: 30px;
+      border-top: 1px solid rgb(75, 75, 75);
+      .live-link {
+        color: #57a8ff;
+      }
+      .github-link {
+        color: #57a8ff;
+        margin-left: 10px;
+      }
+    }
     h3 {
       border-bottom: 1px rgb(56, 56, 56) solid;
       cursor: default;

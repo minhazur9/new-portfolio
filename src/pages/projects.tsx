@@ -22,6 +22,7 @@ const Projects = ({ data }: any) => {
         return foundProjects;
     }
 
+    // Change color of search icon
     const changeIconColor = (input: any, event: 'focus' | 'blur') => {
         const searchIcon = input.previousSibling;
         searchIcon.style.transition = "color 400ms"
@@ -37,12 +38,20 @@ const Projects = ({ data }: any) => {
     const renderProjects: any = (searchTerm: string) => {
         const foundProjects: object[] = searchProjects(searchTerm)
         return foundProjects.map((project: any) => {
-            const { title, thumb } = project.frontmatter
-            const { gatsbyImageData } = thumb.childImageSharp
+            const { html } = project;
+            const { title, thumb, stack, live, github } = project.frontmatter;
+            const { gatsbyImageData } = thumb.childImageSharp;
             return (
-                <div key={title} className="project" >
+                <div key={title} className="project">
                     <h3>{title}</h3>
                     <GatsbyImage image={gatsbyImageData} alt={title} className="project-thumb" />
+                    <div className="project-info">
+                        <p className="desc" dangerouslySetInnerHTML={{ __html: html }} ></p>
+                        <p className="stack">Stack: {stack}</p>
+                        <a href={live} target="_blank" className="live-link">Live</a>
+                        <a href={github} target="_blank" className="github-link">Github</a>
+
+                    </div>
                 </div>
 
             )
@@ -80,13 +89,17 @@ query allProjectsQuery {
         frontmatter {
           title
           slug
+          stack
           stackSlug
+          live
+          github
           thumb {
             childImageSharp {
               gatsbyImageData
             }
           }
         }
+        html
       }
     }
   }

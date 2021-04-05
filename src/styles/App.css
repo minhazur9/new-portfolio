@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap");
+@-webkit-keyframes slideFromLeft {
+  100% {
+    right: 10%;
+    opacity: 100%;
+  }
+}
+@keyframes slideFromLeft {
+  100% {
+    right: 10%;
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 100%;
+  }
+}
+
 .projects-container-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +77,32 @@
   -webkit-box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
   background-color: #fbfcfd;
+  -webkit-transition: max-height 1.5s, -webkit-transform 400ms;
+  transition: max-height 1.5s, -webkit-transform 400ms;
+  transition: transform 400ms, max-height 1.5s;
+  transition: transform 400ms, max-height 1.5s, -webkit-transform 400ms;
+  max-height: 215.1px;
+  overflow: hidden;
+}
+
+.projects-list .project:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  max-height: 1000px;
+}
+
+.projects-list .project .project-info {
+  margin-top: 30px;
+  border-top: 1px solid #4b4b4b;
+}
+
+.projects-list .project .project-info .live-link {
+  color: #57a8ff;
+}
+
+.projects-list .project .project-info .github-link {
+  color: #57a8ff;
+  margin-left: 10px;
 }
 
 .projects-list .project h3 {
@@ -86,22 +137,9 @@
   color: #007bff;
 }
 
-@-webkit-keyframes slideFromLeft {
-  100% {
-    right: 10%;
-    opacity: 100%;
-  }
-}
-
 @keyframes slideFromLeft {
   100% {
     right: 10%;
-    opacity: 100%;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  100% {
     opacity: 100%;
   }
 }
