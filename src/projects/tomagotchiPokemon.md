@@ -2,6 +2,7 @@
 title: Tomagotchi Pokemon
 slug: tomagotchi-pokemon
 stack: JavaScript, CSS, HTML
+stackSlug: javascript-css-html
 date: 2020-9-03T00:00:00+00:00
 thumb: ../images/project-images/tomagotchi-pokemon-thumb.png
 live: https://minhazur9.github.io/Tamagatchi-Pokemon/

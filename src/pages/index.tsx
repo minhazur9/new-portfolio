@@ -19,7 +19,10 @@ export default () =>
                 <a href="https://www.linkedin.com/in/mindev22/" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} size='5x' className="linkedin-icon" />
                 </a>
-                <FontAwesomeIcon icon={faEnvelope} size='5x' className="email-icon" />
+                <a href="mailto:minhazur190@gmail.com" >
+                    <FontAwesomeIcon icon={faEnvelope} size='5x' className="email-icon" />
+                </a>
+
             </div>
         </div>
         <div className="skills">

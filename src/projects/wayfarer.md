@@ -2,6 +2,7 @@
 title: Wayfarer
 slug: wayfarer
 stack: Django, PostgreSQL, jQuery
+stackSlug: django-postgresql-jquery
 date: 2020-11-03T00:00:00+00:00
 thumb: ../images/project-images/wayfarer-thumb.png
 live: https://wayfarer-min.herokuapp.com/

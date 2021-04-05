@@ -31,8 +31,12 @@
   .project {
     max-width: 25%;
     margin: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(75, 75, 75);
     padding: 10px 30px;
+    box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
+    h3 {
+      border-bottom: 1px rgb(56, 56, 56) solid;
+    }
     .project-thumb {
       display: flex;
     }

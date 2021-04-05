@@ -15,7 +15,9 @@ const Projects = ({ data }: any) => {
         const foundProjects: any = [];
         const regexp = new RegExp(searchTerm, 'i')
         allProjects.forEach(project => {
-            if (project.frontmatter.slug.match(regexp)) foundProjects.push(project)
+            const { slug, stackSlug } = project.frontmatter;
+            console.log(stackSlug)
+            if (slug.match(regexp) || stackSlug.match(regexp)) foundProjects.push(project)
         })
         return foundProjects;
     }
@@ -56,6 +58,7 @@ const Projects = ({ data }: any) => {
                     <input type="text"
                         name="search-projects"
                         id="search-projects"
+                        placeholder="Search for names or tech"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                         onFocus={(e) => changeIconColor(e.target, "focus")}
@@ -77,6 +80,7 @@ query allProjectsQuery {
         frontmatter {
           title
           slug
+          stackSlug
           thumb {
             childImageSharp {
               gatsbyImageData

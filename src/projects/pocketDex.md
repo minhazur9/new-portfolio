@@ -2,6 +2,7 @@
 title: PocketDex
 slug: pocket-dex
 stack: MongoDB, Express, React, Node, GraphQL
+stackSlug: mongodb-express-react-node-graphql
 date: 2021-02-03T00:00:00+00:00
 thumb: ../images/project-images/pocketDex-thumb.png
 live: https://pocket-dex.herokuapp.com/

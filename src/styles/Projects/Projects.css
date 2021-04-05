@@ -46,8 +46,14 @@
 .projects-list .project {
   max-width: 25%;
   margin: 20px;
-  border: 1px solid black;
+  border: 1px solid #4b4b4b;
   padding: 10px 30px;
+  -webkit-box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.projects-list .project h3 {
+  border-bottom: 1px #383838 solid;
 }
 
 .projects-list .project .project-thumb {

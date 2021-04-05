@@ -2,6 +2,7 @@
 title: Premier
 slug: premier
 stack: React, Django, PostgreSQL
+stackSlug: react,django,postgrsql
 date: 2020-12-03T00:00:00+00:00
 thumb: ../images/project-images/premier-thumb.png
 live: https://premier-min.herokuapp.com/

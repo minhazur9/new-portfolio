@@ -2,6 +2,7 @@
 title: MusicScape
 slug: music-scape
 stack: MongoDB, Express, Node
+stackSlug: mongodb-express-node
 date: 2020-10-03T00:00:00+00:00
 thumb: ../images/project-images/musicScape-thumb.png
 live: https://fierce-bastion-27114.herokuapp.com/
