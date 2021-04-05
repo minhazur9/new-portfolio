@@ -16,6 +16,7 @@
 
 .projects-container-header .search-box .search-icon {
   margin-right: 10px;
+  color: black;
 }
 
 .projects-container-header .search-box #search-projects {
@@ -23,14 +24,12 @@
   border-left: none;
   border-right: none;
   outline: none;
-  -webkit-transition: border-color 600ms;
-  transition: border-color 600ms;
+  -webkit-transition: border-color 400ms;
+  transition: border-color 400ms;
 }
 
 .projects-container-header .search-box #search-projects:focus {
   border-color: #ff5470;
-  -webkit-transition: border-color 600ms;
-  transition: border-color 600ms;
 }
 
 .projects-list {

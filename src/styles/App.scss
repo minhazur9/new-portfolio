@@ -4,15 +4,25 @@
 @import './Home/Home.scss';
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Merriweather Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
-
-
 body {
-    background-color: aliceblue;
-    height: 100vh;
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+a {
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    opacity: 90%;
+  }
+  &:active {
+    color: inherit;
+  }
 }

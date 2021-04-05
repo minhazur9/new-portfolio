@@ -1,5 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default () =>
     <Layout>
@@ -7,6 +10,16 @@ export default () =>
             <div className="intro">
                 <h1>Full Stack Developer</h1>
                 <p>Making scalable and reliable applications </p>
+            </div>
+            <div className="contact">
+                <a href="https://github.com/minhazur9" target="_blank" >
+                    <FontAwesomeIcon icon={faGithub} size='5x' className="github-icon" />
+                </a>
+                <div className="break"></div>
+                <a href="https://www.linkedin.com/in/mindev22/" target="_blank">
+                    <FontAwesomeIcon icon={faLinkedin} size='5x' className="linkedin-icon" />
+                </a>
+                <FontAwesomeIcon icon={faEnvelope} size='5x' className="email-icon" />
             </div>
         </div>
         <div className="skills">

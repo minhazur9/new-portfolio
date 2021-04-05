@@ -6,10 +6,11 @@ import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 const Projects = ({ data }: any) => {
-    const [searchTerm, setSearchTerm] = useState("")
-    const [allProjects, setAllProjects] = useState([])
+    const [searchTerm, setSearchTerm] = useState<string>("")
+    const [allProjects, setAllProjects] = useState<any[]>([])
 
-    
+
+    // Search through all the current projects by search term
     const searchProjects = (searchTerm: string) => {
         const foundProjects: any = [];
         const regexp = new RegExp(searchTerm, 'i')
@@ -19,13 +20,19 @@ const Projects = ({ data }: any) => {
         return foundProjects;
     }
 
+    const changeIconColor = (input: any, event: 'focus' | 'blur') => {
+        const searchIcon = input.previousSibling;
+        searchIcon.style.transition = "color 400ms"
+        if (event === 'focus') searchIcon.style.color = '#ff5470'
+        else searchIcon.style.color = 'black'
+    }
+
     useEffect(() => {
         setAllProjects(data.allMarkdownRemark.nodes);
     }, [searchTerm])
 
 
     const renderProjects: any = (searchTerm: string) => {
-        console.log(searchTerm)
         const foundProjects: object[] = searchProjects(searchTerm)
         return foundProjects.map((project: any) => {
             const { title, thumb } = project.frontmatter
@@ -46,7 +53,14 @@ const Projects = ({ data }: any) => {
                 <h1>Projects</h1>
                 <div className="search-box">
                     <FontAwesomeIcon icon={faSearch} size='1x' className="search-icon" />
-                    <input type="text" name="search-projects" id="search-projects" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+                    <input type="text"
+                        name="search-projects"
+                        id="search-projects"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        onFocus={(e) => changeIconColor(e.target, "focus")}
+                        onBlur={(e) => changeIconColor(e.target, "blur")}
+                    />
                 </div>
             </div>
             <div className="projects-list">

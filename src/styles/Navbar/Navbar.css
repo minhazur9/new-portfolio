@@ -8,6 +8,10 @@
   font-size: 30px;
 }
 
+.nav .nav-item {
+  color: #007bff;
+}
+
 .nav h1 {
   position: absolute;
   left: 0;

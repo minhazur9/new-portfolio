@@ -1,11 +1,14 @@
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 30px;
-    h1 {
-        position: absolute;
-        left: 0;
-        margin: 10px;
-        color: #007bff
-    }
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  .nav-item {
+    color: #007bff;
+  }
+  h1 {
+    position: absolute;
+    left: 0;
+    margin: 10px;
+    color: #007bff;
+  }
 }
