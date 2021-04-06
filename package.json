@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Typescript Starter with the bare essentials needed for a Gatsby site",
   "scripts": {
-    "build": "rimraf public && npm run format && npm run lint && npm run type-check && gatsby build",
+    "build": "gatsby build",
     "check-format": "prettier --list-different \"src/**/*.{ts,tsx,css,html,json,md}\" ",
     "create-types-for-css-modules": "tcm src -c",
     "create-types-for-sass-modules": "tsm src --nameFormat camel",
