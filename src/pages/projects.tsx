@@ -31,7 +31,9 @@ const Projects = ({ data }: any) => {
     }
 
     useEffect(() => {
+        const abortController = new AbortController();
         setAllProjects(data.allMarkdownRemark.nodes);
+        () => abortController.abort()
     }, [searchTerm])
 
 
