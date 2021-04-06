@@ -687,9 +687,42 @@ a:active {
 }
 
 .not-found-page .not-found-message {
+  text-align: center;
+  margin-top: 10px;
   display: inline-block;
   border: 2px solid #ff5470;
-  padding: 10px;
-  margin: 0 auto;
+  padding: 15px;
+}
+
+.not-found-page .not-found-message h1 {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .not-found-page .not-found-message h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .not-found-page .not-found-message h1 {
+    font-size: 20px;
+  }
+}
+
+.not-found-page .not-found-message p {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .not-found-page .not-found-message p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .not-found-page .not-found-message p {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=App.css.map */
