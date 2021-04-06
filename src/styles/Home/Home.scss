@@ -25,12 +25,30 @@
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+    @media screen and (max-width: 700px) {
+      right: 10%;
+      padding: 20px;
+      border-width: 2px;
+      animation-name: slideFromLeftMobile;
+    }
     h1 {
       font-size: 50px;
+      @media screen and (max-width: 1000px) {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 20px;
+      }
     }
     p {
       font-size: 20px;
       font-weight: lighter;
+      @media screen and (max-width: 1000px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 10px;
+      }
     }
   }
   .contact {
@@ -47,6 +65,15 @@
     .github-icon {
       margin: 15px;
       color: black;
+      @media screen and (max-width: 1450px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 1030px) {
+        font-size: 30px;
+      }
+      // @media screen and (max-width: 700px) {
+      //   font-size: 20px;
+      // }
       &:hover {
         color: rgb(59, 59, 59);
       }
@@ -58,10 +85,22 @@
     .linkedin-icon {
       margin: 15px;
       color: #0a66c2;
+      @media screen and (max-width: 1450px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 1030px) {
+        font-size: 30px;
+      }
     }
     .email-icon {
       margin: 15px;
       color: #E34133;
+      @media screen and (max-width: 1450px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 1030px) {
+        font-size: 30px;
+      }
     }
   }
 }

@@ -5,6 +5,13 @@
     }
 }
 
+@keyframes slideFromLeftMobile {
+    100% {  
+        right: -5%;
+        opacity: 100%;
+    }
+}
+
 @keyframes fadeIn {
     100% {
         opacity: 100%;

@@ -12,6 +12,20 @@
   }
 }
 
+@-webkit-keyframes slideFromLeftMobile {
+  100% {
+    right: -5%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideFromLeftMobile {
+  100% {
+    right: -5%;
+    opacity: 100%;
+  }
+}
+
 @-webkit-keyframes fadeIn {
   100% {
     opacity: 100%;
@@ -77,10 +91,10 @@
   -webkit-box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2);
   background-color: #fbfcfd;
-  -webkit-transition: max-height 1.5s, -webkit-transform 400ms;
-  transition: max-height 1.5s, -webkit-transform 400ms;
-  transition: transform 400ms, max-height 1.5s;
-  transition: transform 400ms, max-height 1.5s, -webkit-transform 400ms;
+  -webkit-transition: max-height 1.5s ease-out, -webkit-transform 400ms;
+  transition: max-height 1.5s ease-out, -webkit-transform 400ms;
+  transition: transform 400ms, max-height 1.5s ease-out;
+  transition: transform 400ms, max-height 1.5s ease-out, -webkit-transform 400ms;
   max-height: 215.1px;
   overflow: hidden;
 }
@@ -126,8 +140,44 @@
   font-size: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .nav .nav-item {
   color: #007bff;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav .nav-item .nav-link {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav .nav-item .nav-link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav .nav-item .nav-link {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav .link-seperator {
+    content: '';
+    background: #007bff;
+    width: 2px;
+    height: 20px;
+    margin-top: 17px;
+  }
 }
 
 .nav h1 {
@@ -135,11 +185,37 @@
   left: 0;
   margin: 10px;
   color: #007bff;
+  cursor: default;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav h1 {
+    display: none;
+  }
 }
 
 @keyframes slideFromLeft {
   100% {
     right: 10%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideFromLeftMobile {
+  100% {
+    right: -5%;
     opacity: 100%;
   }
 }
@@ -191,13 +267,47 @@
           animation-timing-function: ease-in-out;
 }
 
+@media screen and (max-width: 700px) {
+  .intro-container .intro {
+    right: 10%;
+    padding: 20px;
+    border-width: 2px;
+    -webkit-animation-name: slideFromLeftMobile;
+            animation-name: slideFromLeftMobile;
+  }
+}
+
 .intro-container .intro h1 {
   font-size: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-container .intro h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-container .intro h1 {
+    font-size: 20px;
+  }
 }
 
 .intro-container .intro p {
   font-size: 20px;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-container .intro p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-container .intro p {
+    font-size: 10px;
+  }
 }
 
 .intro-container .contact {
@@ -227,6 +337,18 @@
   color: black;
 }
 
+@media screen and (max-width: 1450px) {
+  .intro-container .contact .github-icon {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .intro-container .contact .github-icon {
+    font-size: 30px;
+  }
+}
+
 .intro-container .contact .github-icon:hover {
   color: #3b3b3b;
 }
@@ -242,9 +364,33 @@
   color: #0a66c2;
 }
 
+@media screen and (max-width: 1450px) {
+  .intro-container .contact .linkedin-icon {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .intro-container .contact .linkedin-icon {
+    font-size: 30px;
+  }
+}
+
 .intro-container .contact .email-icon {
   margin: 15px;
   color: #E34133;
+}
+
+@media screen and (max-width: 1450px) {
+  .intro-container .contact .email-icon {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .intro-container .contact .email-icon {
+    font-size: 30px;
+  }
 }
 
 .skills {

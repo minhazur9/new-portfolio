@@ -12,6 +12,20 @@
   }
 }
 
+@-webkit-keyframes slideFromLeftMobile {
+  100% {
+    right: -5%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideFromLeftMobile {
+  100% {
+    right: -5%;
+    opacity: 100%;
+  }
+}
+
 @-webkit-keyframes fadeIn {
   100% {
     opacity: 100%;
@@ -65,13 +79,47 @@
           animation-timing-function: ease-in-out;
 }
 
+@media screen and (max-width: 700px) {
+  .intro-container .intro {
+    right: 10%;
+    padding: 20px;
+    border-width: 2px;
+    -webkit-animation-name: slideFromLeftMobile;
+            animation-name: slideFromLeftMobile;
+  }
+}
+
 .intro-container .intro h1 {
   font-size: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-container .intro h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-container .intro h1 {
+    font-size: 20px;
+  }
 }
 
 .intro-container .intro p {
   font-size: 20px;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-container .intro p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-container .intro p {
+    font-size: 10px;
+  }
 }
 
 .intro-container .contact {
@@ -101,6 +149,18 @@
   color: black;
 }
 
+@media screen and (max-width: 1450px) {
+  .intro-container .contact .github-icon {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .intro-container .contact .github-icon {
+    font-size: 30px;
+  }
+}
+
 .intro-container .contact .github-icon:hover {
   color: #3b3b3b;
 }
@@ -116,9 +176,33 @@
   color: #0a66c2;
 }
 
+@media screen and (max-width: 1450px) {
+  .intro-container .contact .linkedin-icon {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .intro-container .contact .linkedin-icon {
+    font-size: 30px;
+  }
+}
+
 .intro-container .contact .email-icon {
   margin: 15px;
   color: #E34133;
+}
+
+@media screen and (max-width: 1450px) {
+  .intro-container .contact .email-icon {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .intro-container .contact .email-icon {
+    font-size: 30px;
+  }
 }
 
 .skills {

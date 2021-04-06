@@ -2,13 +2,60 @@
   display: flex;
   justify-content: flex-end;
   font-size: 30px;
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
   .nav-item {
     color: #007bff;
+    .nav-link {
+      @media screen and (max-width: 1000px) {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 500px) {
+        margin-top: 5px;
+      }
+    }
   }
+  .link-seperator {
+      @media screen and (max-width: 500px) {
+        content: '';
+        background: #007bff;
+        width: 2px;
+        height: 20px;
+        margin-top: 17px;
+      }
+    }
   h1 {
     position: absolute;
     left: 0;
     margin: 10px;
     color: #007bff;
+    cursor: default;
+    @media screen and (max-width: 1000px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
 }
+
+// #home-link {
+//   &::after {
+//     @media screen and (max-width: 500px) {
+//       content: '';
+//       height: 20px;
+//       width: 0.5px;
+//       background: #007bff;
+//       position: absolute;
+//       top: 17px;
+//       left: 187px;
+//     }
+//   }
+// }

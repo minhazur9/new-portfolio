@@ -12,6 +12,20 @@
   }
 }
 
+@-webkit-keyframes slideFromLeftMobile {
+  100% {
+    right: -5%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideFromLeftMobile {
+  100% {
+    right: -5%;
+    opacity: 100%;
+  }
+}
+
 @-webkit-keyframes fadeIn {
   100% {
     opacity: 100%;

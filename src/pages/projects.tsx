@@ -13,11 +13,11 @@ const Projects = ({ data }: any) => {
     // Search through all the current projects by search term
     const searchProjects = (searchTerm: string) => {
         const foundProjects: any = [];
+        searchTerm = searchTerm.replace(/[^a-zA-Z0-9]/g, '');
         const regexp = new RegExp(searchTerm, 'i')
         allProjects.forEach(project => {
             const { slug, stackSlug } = project.frontmatter;
-            console.log(stackSlug)
-            if (slug.match(regexp) || stackSlug.match(regexp)) foundProjects.push(project)
+            if (slug.match(regexp) || stackSlug.match(regexp)) foundProjects.push(project);
         })
         return foundProjects;
     }
