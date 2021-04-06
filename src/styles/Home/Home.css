@@ -14,14 +14,14 @@
 
 @-webkit-keyframes slideFromLeftMobile {
   100% {
-    right: -5%;
+    right: -2%;
     opacity: 100%;
   }
 }
 
 @keyframes slideFromLeftMobile {
   100% {
-    right: -5%;
+    right: -2%;
     opacity: 100%;
   }
 }
@@ -50,6 +50,15 @@
       -ms-flex-align: center;
           align-items: center;
   height: 400px;
+}
+
+@media screen and (max-width: 700px) {
+  .intro-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .intro-container:after {
@@ -81,11 +90,14 @@
 
 @media screen and (max-width: 700px) {
   .intro-container .intro {
+    width: 200px;
+    overflow-wrap: break-word;
     right: 10%;
     padding: 20px;
     border-width: 2px;
     -webkit-animation-name: slideFromLeftMobile;
             animation-name: slideFromLeftMobile;
+    margin-bottom: 50px;
   }
 }
 
@@ -102,6 +114,12 @@
 @media screen and (max-width: 800px) {
   .intro-container .intro h1 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .intro-container .intro h1 {
+    font-size: 25px;
   }
 }
 
@@ -144,6 +162,22 @@
           animation-delay: 500ms;
 }
 
+@media screen and (max-width: 700px) {
+  .intro-container .contact {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 20px;
+    bottom: 20px;
+  }
+}
+
 .intro-container .contact .github-icon {
   margin: 15px;
   color: black;
@@ -171,6 +205,12 @@
   height: 0;
 }
 
+@media screen and (max-width: 700px) {
+  .intro-container .contact .break {
+    display: none;
+  }
+}
+
 .intro-container .contact .linkedin-icon {
   margin: 15px;
   color: #0a66c2;
@@ -190,7 +230,7 @@
 
 .intro-container .contact .email-icon {
   margin: 15px;
-  color: #E34133;
+  color: #e34133;
 }
 
 @media screen and (max-width: 1450px) {

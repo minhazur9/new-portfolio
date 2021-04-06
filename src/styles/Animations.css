@@ -14,14 +14,14 @@
 
 @-webkit-keyframes slideFromLeftMobile {
   100% {
-    right: -5%;
+    right: -2%;
     opacity: 100%;
   }
 }
 
 @keyframes slideFromLeftMobile {
   100% {
-    right: -5%;
+    right: -2%;
     opacity: 100%;
   }
 }
