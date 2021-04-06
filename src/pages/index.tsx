@@ -3,6 +3,8 @@ import Layout from '../components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+// @ts-ignore
+import Resume from '../../static/documents/Minhazur_Rahaman_Resume.pdf'
 
 export default () =>
     <Layout>
@@ -10,6 +12,7 @@ export default () =>
             <div className="intro">
                 <h1>Full Stack Developer</h1>
                 <p>Making scalable and reliable applications </p>
+                <a href={Resume} target="_blank">Download Resume</a>
             </div>
             <div className="contact">
                 <a href="https://github.com/minhazur9" target="_blank" >
