@@ -272,10 +272,40 @@
       justify-content: space-around;
 }
 
+@media screen and (max-width: 500px) {
+  .skills .skill-cols {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills .skill-cols .skill-cat {
+    margin-top: 10px;
+  }
+}
+
 .skills .skill-cols .skill-cat h4 {
   text-align: center;
   font-size: 30px;
   border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 1000px) {
+  .skills .skill-cols .skill-cat h4 {
+    font-size: 20px;
+    text-decoration: underline;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills .skill-cols .skill-cat h4 {
+    font-size: 15px;
+  }
 }
 
 .skills .skill-cols .skill-cat .list-table {
@@ -287,5 +317,11 @@
 
 .skills .skill-cols .skill-cat .list-table p {
   margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .skills .skill-cols .skill-cat .list-table p {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

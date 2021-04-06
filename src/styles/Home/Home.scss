@@ -88,9 +88,6 @@
       @media screen and (max-width: 1030px) {
         font-size: 30px;
       }
-      // @media screen and (max-width: 700px) {
-      //   font-size: 20px;
-      // }
       &:hover {
         color: rgb(59, 59, 59);
       }
@@ -135,17 +132,35 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      margin-top: 10px;
+    }
     .skill-cat {
+      @media screen and (max-width: 500px) {
+        margin-top: 10px;
+      }
       h4 {
         text-align: center;
         font-size: 30px;
         border-bottom: 2px solid black;
+        @media screen and (max-width: 1000px) {
+          font-size: 20px;
+          text-decoration: underline;
+          border-bottom: none;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 15px;
+        }
       }
       .list-table {
         display: grid;
         grid-template-columns: 1fr 1fr;
         p {
           margin: auto;
+          @media screen and (max-width: 1000px) {
+            font-size: 12px;
+          }
         }
       }
     }
