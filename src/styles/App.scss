@@ -25,3 +25,14 @@ a {
     color: inherit;
   }
 }
+
+.not-found-page {
+  display: flex;
+  justify-content: center;
+  .not-found-message {
+    display: inline-block;
+    border: 2px solid #ff5470;
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
