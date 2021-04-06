@@ -3,13 +3,44 @@
   display: flex;
   justify-content: center;
   color: #ff5470;
+  margin-top: 10px;
+  @media screen and (max-width: 500px) {
+    margin-top: 20px;
+  }
+  h1 {
+    @media screen and (max-width: 1000px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 15px;
+    }
+  }
   .search-box {
     margin-top: 15px;
     margin-left: 60px;
     height: 35px;
+    @media screen and (max-width: 1000px) {
+      margin-top: 5px;
+    }
+    @media screen and (max-width: 800px) {
+      margin-top: initial;
+      margin-left: 30px;
+    }
+    @media screen and (max-width: 500px) {
+      margin-top: -3px
+    }
     .search-icon {
       margin-right: 10px;
       color: black;
+      @media screen and (max-width: 1000px) {
+        width: 12px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 9px;
+      }
     }
     #search-projects {
       border-top: none;
@@ -17,6 +48,9 @@
       border-right: none;
       outline: none;
       transition: border-color 400ms;
+      @media screen and (max-width: 1000px) {
+        font-size: 10px;
+      }
       &:focus {
         border-color: #ff5470;
       }
@@ -33,6 +67,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    margin-top: -10px;
   }
   .project {
     max-width: 25%;
@@ -45,7 +80,7 @@
     max-height: 215.1px;
     overflow: hidden;
     @media screen and (max-width: 1400px) {
-       max-height: 200px;
+      max-height: 200px;
     }
     @media screen and (max-width: 1200px) {
       max-height: 165px;
@@ -90,10 +125,10 @@
       cursor: default;
       @media screen and (max-width: 800px) {
         font-size: 20px;
-     }
-     @media screen and (max-width: 650px) {
-      font-size: 15px;
-   }
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 15px;
+      }
     }
     .project-thumb {
       display: flex;
