@@ -1,40 +1,40 @@
 @-webkit-keyframes slideFromLeft {
-  100% {
-    right: 10%;
-    opacity: 100%;
+  from {
+    right: 20%;
+    opacity: 0;
   }
 }
 
 @keyframes slideFromLeft {
-  100% {
-    right: 10%;
-    opacity: 100%;
+  from {
+    right: 20%;
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes slideFromLeftMobile {
-  100% {
-    right: -2%;
-    opacity: 100%;
+  from {
+    right: 10%;
+    opacity: 0;
   }
 }
 
 @keyframes slideFromLeftMobile {
-  100% {
-    right: -2%;
-    opacity: 100%;
+  from {
+    right: 10%;
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes fadeIn {
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
 @keyframes fadeIn {
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -74,8 +74,8 @@
   border: #ff5470 5px solid;
   border-radius: 2px;
   padding: 45px;
-  right: 20%;
-  opacity: 0;
+  right: 10%;
+  opacity: 1;
   text-align: center;
   position: relative;
   -webkit-animation-name: slideFromLeft;
@@ -92,7 +92,7 @@
   .intro-container .intro {
     width: 200px;
     overflow-wrap: break-word;
-    right: 10%;
+    right: -2%;
     padding: 20px;
     border-width: 2px;
     -webkit-animation-name: slideFromLeftMobile;

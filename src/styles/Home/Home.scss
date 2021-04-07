@@ -20,8 +20,8 @@
     border: #ff5470 5px solid;
     border-radius: 2px;
     padding: 45px;
-    right: 20%;
-    opacity: 0;
+    right: 10%;
+    opacity: 1;
     text-align: center;
     position: relative;
     animation-name: slideFromLeft;
@@ -31,7 +31,7 @@
     @media screen and (max-width: 700px) {
       width: 200px;
       overflow-wrap: break-word;
-      right: 10%;
+      right: -2%;
       padding: 20px;
       border-width: 2px;
       animation-name: slideFromLeftMobile;

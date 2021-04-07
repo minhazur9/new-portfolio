@@ -8,6 +8,9 @@
   .nav-item {
     color: #007bff;
     .nav-link {
+      &:hover {
+        color: #0364cd
+      }
       @media screen and (max-width: 1000px) {
         font-size: 25px;
       }

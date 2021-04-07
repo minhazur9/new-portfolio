@@ -7,7 +7,7 @@ const NotFound = () => {
             <div className="not-found-page">
                 <div className="not-found-message">
                     <h1>404</h1>
-                    <p>Sorry Page doesn't exist</p>
+                    <p>Sorry page doesn't exist</p>
                 </div>
 
             </div>
