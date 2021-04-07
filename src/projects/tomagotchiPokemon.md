@@ -9,4 +9,4 @@ live: https://minhazur9.github.io/Tamagatchi-Pokemon/
 github: https://github.com/minhazur9/Tamagatchi-Pokemon
 ---
 
-A movie/show database application that allows you to look up information about movies and tv shows. You can read reviews and make your own reviews by simply registering for an account and logging in. You also have the ability to add in a list of recommendations for movies and tv shows on your profile.
+A browser game that requires skill and focus that needs players to help a pet survive until it morphs into its later stages in life. It records how many days your pet has survived and the clock will be ticking at all times
