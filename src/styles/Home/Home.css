@@ -216,6 +216,10 @@
   color: #0a66c2;
 }
 
+.intro-container .contact .linkedin-icon:hover {
+  color: #07519b;
+}
+
 @media screen and (max-width: 1450px) {
   .intro-container .contact .linkedin-icon {
     font-size: 50px;
@@ -231,6 +235,10 @@
 .intro-container .contact .email-icon {
   margin: 15px;
   color: #e34133;
+}
+
+.intro-container .contact .email-icon:hover {
+  color: #ac2f23;
 }
 
 @media screen and (max-width: 1450px) {

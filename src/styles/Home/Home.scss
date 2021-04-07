@@ -102,6 +102,9 @@
     .linkedin-icon {
       margin: 15px;
       color: #0a66c2;
+      &:hover {
+        color: #07519b;
+      }
       @media screen and (max-width: 1450px) {
         font-size: 50px;
       }
@@ -112,6 +115,9 @@
     .email-icon {
       margin: 15px;
       color: #e34133;
+      &:hover {
+        color: #ac2f23;
+      }
       @media screen and (max-width: 1450px) {
         font-size: 50px;
       }
